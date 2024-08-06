@@ -131,6 +131,9 @@ python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -
 python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -convert FOFA -api -output_file apt_28_results.txt
 ```
 
+## Example Use Cases:
+- [Discovering Meduza Stealer Infrastructure with Pythia](https://medium.com/@s.lontzetidis/8956876cc15a)
+
 ## Resources & Further Reading on Hunting Malicious Infrastructure
 - [Hunting Adversary Infrastructure Course - Intel-Ops](https://academy.intel-ops.io/courses/hunting-adversary-infra)
 - [Will Thomas Blog](https://blog.bushidotoken.net/)
