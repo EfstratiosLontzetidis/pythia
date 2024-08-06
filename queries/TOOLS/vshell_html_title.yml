@@ -1,0 +1,19 @@
+title: Vshell Remote Admin Tool - HTML Title
+id: pythia-b423979f-164d-472a-bb61-e639a3dc9db2
+status: stable
+description: This query identifies Vshell remote admin tool using html title
+references:
+    - https://x.com/MichalKoczwara/status/1643578019242442752
+tags:
+    - vshell
+    - remote_admin_tool
+author: Efstratios Lontzetidis, @lontze7
+date: 2024/07/31
+query:
+    parameters:
+        part1:
+            http_title: ':"Vshell - 登录"'
+    condition: part1
+falsepositives:
+    - No false positives at the moment
+level: high

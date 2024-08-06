@@ -1,0 +1,28 @@
+title: Mirai Opendir Hosting Payloads in Multiple Architectures
+id: pythia-b423979f-174d-472a-bb61-e639a3dc9bb0
+status: experimental
+description: This query identifies open directories that are hosting Mirai malware in multiple architectures such as .arm6,arm7,mips,etc
+references:
+    - https://x.com/lontze7/status/1807997032948261022
+tags:
+    - mirai
+    - gafgyt
+    - opendir
+author: Efstratios Lontzetidis, @lontze7
+date: 2024/07/25
+query:
+    parameters:
+        part1:
+            http_title: ':"*Index Of*"'
+        part2: 
+            http_title: ':"*Directory Listing*"'
+        part3: 
+            http_body: ':"*.arm*"'
+        part4: 
+            http_body: ':"*.mips*"'
+        part5:
+            http_body: ':"*.sh*"'
+    condition: (part1 or part2) and (part3 and part4 and part5) # first parenthesis part is to identify opendirs and the second is to capture this specific hosting technique from Mirai operators
+falsepositives:
+    - If the file names hosted in the opendir haven't the same name (i.e. test.arm5 and hello.mips,etc) is probably false positive since Mirai operators usually follow the same naming convention for their payloads
+level: moderate

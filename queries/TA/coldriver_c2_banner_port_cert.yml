@@ -1,0 +1,26 @@
+title: COLDRIVER Infrastructure - Banner, Port and Cert
+id: pythia-b423979f-174d-472a-bb61-e639a3dc9bb8
+status: experimental
+description: This query identifies COLDRIVER C2 infrastructure from clues based on banner, port and certification details.
+references:
+    - https://medium.com/@fofabot/practical-fofa-asset-discovery-coldriver-bdb971f2413b
+tags:
+    - coldriver
+    - star_blizard
+    - unc4057
+author: FOFA, @fofabot
+date: 2024/03/14
+query:
+    parameters:
+        part1:
+            service_banner: ':"\x15\x03\x03\x00\x02\x022"'
+        part2: 
+            port_number: '="3000"'
+        part3: 
+            tls_certificate: ':"Internet Widgits Pty Ltd"'
+        part4: 
+            tls_certificate: ':"2023–06–23 15:59 UTC"'
+    condition: part1 and part2 and part3 and part4
+falsepositives:
+    - No false positives at the moment
+level: moderate

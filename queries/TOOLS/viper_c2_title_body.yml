@@ -1,0 +1,23 @@
+title: Viper C2 - Title and Body
+id: pythia-b423976b-174d-472a-bb61-e639a3dc9bb2
+status: experimental
+description: This query identifies Viper C2 infrastructure using html title and body
+references:
+    - https://x.com/cyber_ra1/status/1790009791915425810
+tags:
+    - viper
+    - rat
+    - c2
+    - commandandcontrol
+author: Efstratios Lontzetidis, @lontze7
+date: 2024/07/31
+query:
+    parameters:
+        part1:
+            http_body: ':"Sorry, we need js to run correctly!"'
+        part2: 
+            http_title: ':"Viper"'
+    condition: part1 and part2
+falsepositives:
+    - No false positives at the moment
+level: moderate

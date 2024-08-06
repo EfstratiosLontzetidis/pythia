@@ -1,0 +1,24 @@
+title: Kimsuky APT - Certificate ASN Service Count
+id: pythia-b423178f-114d-472a-ba61-e639a3dc9db2
+status: test
+description: This query identifies Kimsuky APT infrastructure using certificate and ASN
+references:
+    - https://x.com/Cyberteam008/status/1805796115196883025
+tags:
+    - kimsuky
+    - apt43
+    - black_banshee
+author: Cyber Team, @Cyberteam008
+date: 2024/06/26
+query:
+    parameters:
+        part1:
+            tls_certificate: ':"9de541b039cfdb96c7810df49efd958b28cc2df73e314f67c1a91469a2b19796"'
+        part2: 
+            autonomous_system_number: ':"19318"'
+        part3:
+            port_size: ':"3"'
+    condition: part1 and part2 and part3
+falsepositives:
+    - No false positives at the moment
+level: moderate

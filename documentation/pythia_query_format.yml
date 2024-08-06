@@ -1,0 +1,23 @@
+title: A Short Capitalised Title with Less Than 50 Characters
+id: pythia-[generate one here](https://www.uuidgenerator.net/version4)
+status: experimental|test|stable
+description: A description of what your query is meant to search
+references:
+    - A list of all references that can help a reader or analyst understand the origin for creating the query
+tags:
+    - relevant.tag1          # example tag kimsuky_apt
+    - relevant.tag2          # example tag kematian_stealer
+author: Your Name, Contributor Name  # example, a list of authors
+date: YYYY/MM/DD  # Rule date
+query:
+    parameters:
+        part1:
+            dsdsds: ':StringValue*' # :,*,= are all operators inside the query supported by pythia
+        part2: 
+            sdsdsds: '=IntegerValue'
+        part3: 
+            dsdsds: 'Value'
+    condition: describe the condition of the query here # example (part1 and part2) or part3
+falsepositives:
+    - describe possible false positive conditions to help the analysts in their investigation
+level: low|moderate|high - one of the confidence levels

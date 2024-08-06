@@ -1,0 +1,19 @@
+title: Cobalt Strike geacon_pro Profile - Subject CN
+id: pythia-b423979f-154d-472a-bb61-e639a3dc9db2
+status: test
+description: This query identifies Cobalt Strike geacon_pro profile using certificate subject common name
+references:
+    - https://x.com/MichalKoczwara/status/1641676761283850241
+tags:
+    - cobalt_strike
+    - geacon_pro
+author: Michael Koczwara, @MichalKoczwara
+date: 2023/03/31
+query:
+    parameters:
+        part1:
+            tls_certificate_subject_cn: ':"foren.zik"'
+    condition: part1
+falsepositives:
+    - No false positives at the moment
+level: moderate

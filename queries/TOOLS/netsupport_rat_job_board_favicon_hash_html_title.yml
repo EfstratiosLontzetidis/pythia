@@ -1,0 +1,22 @@
+title: NetSupport RAT Job Board - Favicon Hash HTML Title
+id: pythia-b123979f-264d-472a-bb61-e639a3dc9db2
+status: experimental
+description: This query identifies NetSupport RAT Job Boards using html title and favicon hash
+references:
+    - https://x.com/banthisguy9349/status/1808872152419954828
+tags:
+    - netsupport
+    - rat
+    - remote_admin_tool
+author: Fox_threatintel, @banthisguy9349
+date: 2024/07/04
+query:
+    parameters:
+        part1:
+            http_favicon_hash: ':"821018649c8fdad8391c36fadcb793a5"'
+        part2:
+            http_title: ':"Job Board"'
+    condition: part1 and part2
+falsepositives:
+    - Legitimate Job Boards
+level: low

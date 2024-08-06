@@ -1,0 +1,19 @@
+title: Supershell C2 - HTML Title
+id: pythia-b423978f-164d-472a-bb61-e639a3dc9db2
+status: stable
+description: This query identifies Supershell C2 infra using html title
+references:
+    - https://x.com/TESSERACT___/status/1810192748735078842
+tags:
+    - supershell
+    - c2
+author: Efstratios Lontzetidis, @lontze7
+date: 2024/07/07
+query:
+    parameters:
+        part1:
+            http_title: ':"Supershell - 登录"'
+    condition: part1
+falsepositives:
+    - No false positives at the moment
+level: high

@@ -1,0 +1,20 @@
+title: GoPhish Phishing - JARM, Favicon Hash
+id: pythia-b425279f-174d-472a-bb61-e639a3dc9bb4
+status: experimental
+description: This query identifies GoPhish infrastructure from clues based on jarm
+references:
+    - https://x.com/MichalKoczwara/status/1601554276106792960
+tags:
+    - go_phish
+    - phishing
+    - man_in_the_middle
+author: Michael Koczwara, @MichalKoczwara
+date: 2022/12/10
+query:
+    parameters:
+        part1:
+            jarm_fingerprint: ':"28d28d28d00028d00041d28d28d41dd279b0cf765af27fa62e66d7c8281124"'
+    condition: part1
+falsepositives:
+    - No information on false positives
+level: low

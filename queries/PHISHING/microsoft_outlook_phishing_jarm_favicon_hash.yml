@@ -1,0 +1,22 @@
+title: Microsoft Outlook Phishing Infrastructure - JARM, Favicon Hash
+id: pythia-b423979f-174d-472a-bb61-e639a3dc9bb4
+status: experimental
+description: This query identifies Microsoft Outlook phishing infrastructure from clues based on jarm and favicon hash.
+references:
+    - https://x.com/FalconFeedsio/status/1680851724817563648
+tags:
+    - microsoft_outlook
+    - phishing
+    - man_in_the_middle
+author: FalconFeeds, @FalconFeedsio
+date: 2023/07/17
+query:
+    parameters:
+        part1:
+            jarm_fingerprint: ':"29d29d00000000021c29d29d29d29d1f4989c319e75da83988253a39553038"'
+        part2: 
+            http_favicon_hash_dec: ':"1768726119"'
+    condition: part1 and part2
+falsepositives:
+    - Legitimate Microsoft Outlook hosting pages and IPs
+level: low
