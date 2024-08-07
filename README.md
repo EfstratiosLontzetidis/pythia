@@ -107,31 +107,31 @@ pip install -r requirements.txt
 
 Usage Examples:
 
--Validate Pythia query:
+- Validate Pythia query:
 
 ```bash
 python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -validate
 ```
 
--Convert Pythia query to a specified platform's format
+- Convert Pythia query to a specified platform's format
 
 ```bash
 python3 pythia.py -file queries/MALWARE/asyncrat_subject_issuer_cn.yml -convert FOFA
 ```
 
--Convert Pythia query to a specified platform's format and open the URL in the browser
+- Convert Pythia query to a specified platform's format and open the URL in the browser
 
 ```bash
 python3 pythia.py -file queries/MALWARE/hookbot_panel_html_title.yml  -convert SHODAN -open_url
 ```
 
-Convert Pythia query to a specified platform's format and search its API for results (you must supplement the API credentials in config/api_configs.py)
+- Convert Pythia query to a specified platform's format and search its API for results (you must supplement the API credentials in config/api_configs.py)
 
 ```bash
 python3 pythia.py -file queries/MALWARE/meduza_stealer_html_title.yml -convert CENSYS -api
 ```
 
--Convert Pythia query to a specified platform's format and search its API for results and save them in a file
+- Convert Pythia query to a specified platform's format and search its API for results and save them in a file
 
 ```bash
 python3 pythia.py -file queries/MALWARE/quasar_rat_subject_common_name.yml -convert ALL -output_file quasar_results.txt
