@@ -1,11 +1,15 @@
 certifi==2024.7.4
 charset-normalizer==3.3.2
 DateTime==5.5
+dateutils==0.6.12
 idna==3.7
 ipaddress==1.0.23
 pyfiglet==1.0.2
+python-dateutil==2.9.0.post0
 pytz==2024.1
+PyYAML==6.0.2
 requests==2.32.3
+six==1.16.0
 termcolor==2.4.0
 urllib3==2.2.2
 zope.interface==6.4.post2
