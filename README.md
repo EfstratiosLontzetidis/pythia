@@ -131,7 +131,7 @@ python3 pythia.py -file queries/MALWARE/hookbot_panel_html_title.yml  -convert S
 python3 pythia.py -file queries/MALWARE/meduza_stealer_html_title.yml -convert CENSYS -api
 ```
 
-- Convert Pythia query to a specified platform's format and search its API for results and save them in a file
+- Convert Pythia query to all platforms' format and save them in a file
 
 ```bash
 python3 pythia.py -file queries/MALWARE/quasar_rat_subject_common_name.yml -convert ALL -output_file quasar_results.txt
