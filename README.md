@@ -116,19 +116,25 @@ python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -
 -Convert Pythia query to a specified platform's format
 
 ```bash
-python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -convert CENSYS
+python3 pythia.py -file queries/MALWARE/hookbot_panel_html_title.yml  -convert SHODAN
+```
+
+-Convert Pythia query to a specified platform's format and open the URL in the browser
+
+```bash
+python3 pythia.py -file queries/MALWARE/hookbot_panel_html_title.yml  -convert FOFA -open_url
 ```
 
 Convert Pythia query to a specified platform's format and search its API for results (you must supplement the API credentials in config/api_configs.py)
 
 ```bash
-python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -convert BINARYEDGE -api
+python3 pythia.py -file queries/MALWARE/meduza_stealer_html_title.yml -convert CENSYS -api
 ```
 
 -Convert Pythia query to a specified platform's format and search its API for results and save them in a file
 
 ```bash
-python3 pythia.py -file queries/TOOLS/mythic_c2_favicon_hash_dec_or_title.yml  -convert FOFA -api -output_file apt_28_results.txt
+python3 pythia.py -file queries/MALWARE/quasar_rat_subject_common_name.yml -convert ALL -output_file quasar_results.txt
 ```
 
 ## Example Use Cases:
